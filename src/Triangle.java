@@ -58,7 +58,7 @@ public class Triangle
    }
    double getPerimeter()
    {
-      return area;
+      return perimeter;
    }
 
    @Override
