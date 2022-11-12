@@ -7,11 +7,6 @@ public class Point
         this.x=x;
         this.y=y;
     }
-    void setXY(int x, int y)
-    {
-        this.x=x;
-        this.y=y;
-    }
     double getX()
     {
         return x;
@@ -20,7 +15,6 @@ public class Point
     {
         return y;
     }
-
     @Override
     public String toString()
     {
