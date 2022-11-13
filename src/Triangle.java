@@ -19,7 +19,13 @@ public class Triangle
 
    Triangle(Point a, Point b, Point c)
    {
+      if(!isCorrect(a, b, c)) throw new RuntimeException();
       setABC(a, b, c);
+   }
+   boolean isCorrect(Point a, Point b, Point c)
+   {
+      if(a.compareTo(b)==0 || a.compareTo(c)==0 || b.compareTo(c)==0) return false;
+      return true;
    }
    void setABC(Point a, Point b, Point c)
    {
@@ -35,6 +41,8 @@ public class Triangle
 
       area=abs(1/2.0*((a.getX()-c.getX())*(b.getY()-c.getY())-(a.getY()-c.getY())*(b.getX()-c.getX())));
       perimeter=ab+ac+bc;
+
+      typeTriangle = TypeTriangle.ARBITRARY;
    }
    TypeTriangle defineType()
    {
