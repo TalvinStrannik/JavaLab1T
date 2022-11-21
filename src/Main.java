@@ -251,7 +251,7 @@ public class Main
         }
     }
 
-    private static int getNumberOfTriangles()
+    private static int setNumberOfTriangles()
     {
         int numberOfTriangles;
         System.out.print("Number of Triangles: ");
@@ -311,7 +311,7 @@ public class Main
 
     public static void main(String[] args)
     {
-        int numberOfTriangles=getNumberOfTriangles();
+        int numberOfTriangles=setNumberOfTriangles();
         Triangle[] triangles=new Triangle[numberOfTriangles];
         fillTriangles(triangles);
 
